@@ -11,7 +11,6 @@ public class Main {
         System.out.println(motito_2.desplazar());
         System.out.println(motito_3.desplazar());
 
-
         Coche c = new Coche("Toyota", 120, 4);
         c.desplazar(); // normal
         c.desplazar("automático"); // automático
