@@ -19,5 +19,8 @@ public class Main {
         Bicicleta b = new Bicicleta("Venzo", 25, "29", "m");
         b.desplazar(); // sobrescrito
 
+        System.out.println(b.desplazar());
+
+
     }
 }
