@@ -1,4 +1,4 @@
-public class Libro {
+public class Libro implements Comparable<Libro> {
 
     private String titulo;
     private String autor;
@@ -26,6 +26,7 @@ public class Libro {
         this.anioPublicacion = anioPublicacion;
     }
 
+
     public void setAutor(String autor) {
         this.autor = autor;
     }
@@ -36,6 +37,12 @@ public class Libro {
 
     @Override
     public String toString() {
-        return super.toString();
+        return titulo + " - " + autor + " (" + anioPublicacion + ")";
+    }
+
+
+    @Override
+    public int compareTo(Libro o) {
+        return this.titulo.compareToIgnoreCase(o.getTitulo());
     }
 }

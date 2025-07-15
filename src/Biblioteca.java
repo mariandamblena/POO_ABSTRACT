@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Biblioteca {
+public class Biblioteca{
 
     private String nombre;
     private ArrayList<Libro> libros;
